@@ -1,0 +1,20 @@
+@mixin btn($wdth:193px, $hght:58px, $brdrrds:10px, $bckgrndclr:$clrAccnt) {
+    width: $wdth;
+    height: $hght;
+    border-radius: $brdrrds;
+    background-color: $bckgrndclr;
+}
+
+@mixin tab($wdth:380px, $hght:50px, $brdrrds:10px, $bckgrndclr:$clrFrmInfgraf) {
+    width: $wdth;
+    height: $hght;
+    border-radius: $brdrrds;
+    background-color: $bckgrndclr;
+}
+
+@mixin icon($wdth:55px, $hght:55px, $brdrrds:50%, $bckgrndclr:$clrFrmInfgraf) {
+    width: $wdth;
+    height: $hght;
+    border-radius: $brdrrds;
+    background-color: $bckgrndclr;
+}

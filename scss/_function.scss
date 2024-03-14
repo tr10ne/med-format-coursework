@@ -1,0 +1,4 @@
+@function rem($fontSize) {
+    $resault: $fontSize / $fntSz + rem;
+    @return $resault
+}

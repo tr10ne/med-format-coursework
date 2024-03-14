@@ -1,0 +1,22 @@
+%rwsSz {
+    width: 60px;
+    height: 60px;
+    border: 1px solid $clrIntrActvBrdr;
+    border-radius: 50%;
+}
+
+%rrwsSzHvr {
+    width: 60px;
+    height: 60px;
+    border: none;
+    background-color: $clrAccnt;
+    border-radius: 50%;
+}
+
+%frmSz {
+    width: 280px;
+    height: 58px;
+    border: 1px solid $clrIntrActvBrdr;  
+    border-radius: 10px;
+    padding: 18px 30px 18px 30px;  
+}
