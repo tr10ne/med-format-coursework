@@ -1,0 +1,17 @@
+.head {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    column-gap: 20px;
+}
+
+.block {
+    display: flex;
+
+}
+
+.social__icon {
+    width: 24px;
+    height: 24px;
+}
