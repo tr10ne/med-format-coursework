@@ -1,6 +1,7 @@
-@mixin btn($wdth:193px, $hght:58px, $brdrrds:10px, $bckgrndclr:$clrAccnt) {
+@mixin btn($wdth:193px, $hght:58px, $brdrrds:10px, $brdr:none, $bckgrndclr:$clrAccnt) {
     width: $wdth;
     height: $hght;
+    border: $brdr;
     border-radius: $brdrrds;
     background-color: $bckgrndclr;
 }

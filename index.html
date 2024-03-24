@@ -25,24 +25,41 @@
                     <div class="message-contact">
                         <ul class="social">
                             <li class="social__item">
-                                <a href="#" class="social__link"><svg class="social__icon"><use xlink:href="./icons/telega.svg#telega"></use></svg></a>
+                                <a href="#" class="social__link"><svg class="social__icon social__icon_telega"><use xlink:href="./icons/sprite.svg#telega"></use></svg></a>
                             </li>
                             <li class="social__item">
-                                <a href="#" class="social__link"><svg class="social__icon"><use xlink:href="./icons/sprite.svg#whatsapp"></use></svg></a>
+                                <a href="#" class="social__link"><svg class="social__icon social__icon_whatsapp"><use xlink:href="./icons/sprite.svg#whatsapp"></use></svg></a>
                             </li>
-                        </li>
+                        </ul>
                         <a href="mailto:admin@cpkbf.ru" class="mail-link"><svg class="social__icon social__icon_mail"><use xlink:href="./icons/sprite.svg#email"></use></svg>admin@cpkbf.ru</a>
                     </div>
                     <div class="phone-contact">
                         <ul class="phone">
                             <li class="phone__item">
-                                <a href="tel:88005008114" class="phone__link"><svg class="phone__icon"><use xlink:href="./icons/sprite.svg#phone-head"></use></svg>8 800 500-81-14</a>
+                                <a href="tel:88005008114" class="phone__link"><svg class="social__icon social__icon_phone"><use xlink:href="./icons/sprite.svg#phone-head"></use></svg>8 800 500-81-14</a>
                             </li>
                             <li class="phone__item">
                                 <a href="tel:89130672234" class="phone__link">8 913 067 22-34</a>
                             </li>
                         </ul>
                     </div>
+                    <div class="phone-contact phone-contact_mobile">
+                        <svg class="social__icon social__icon_phone"><use xlink:href="./icons/sprite.svg#phone-head"></use></svg>
+                        <svg class="social__icon social__icon_arrow"><use xlink:href="./icons/sprite.svg#arrow-phone"></use></svg>
+                        <div class="phone-layout">
+                            <ul class="phone">
+                                <li class="phone__item">
+                                    <a href="tel:88005008114" class="phone__link">8 800 500-81-14</a>
+                                </li>
+                                <li class="phone__item">
+                                    <a href="tel:89130672234" class="phone__link">8 913 067 22-34</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="burger">
+                        <span class="burger__line"></span>
+                    </button>
                 </div>
             </div>
             <nav class="nav">
@@ -63,15 +80,39 @@
                         <a href="#" class="menu__link">Контакты</a>
                     </li>
                 </ul>
-                <a href="#" class="enter-sdo">Вход в СДО<svg></svg></a>
+                <a href="#" class="enter-sdo">Вход в СДО<svg class="social__icon social__icon_enter"><use xlink:href="./icons/sprite.svg#enter"></use></svg></a>
             </nav>
         </header>
         <main class="main">
-
+            <section class="courses-for-medical">
+                <div class="container container_text">
+                    <h1 class="courses-for-medical__title">Курсы для <span class="accent">медицинских работников</span></h1>
+                    <p class="courses-for-medical__desc">Повышение квалификации и профессиональная переподготовка врачей, фельдшеров, медсестер<br>и фармацевтов</p>
+                    <ul class="courses-for-medical__list">
+                        <li class="courses-for-medical__item"><span class="list-item">Работаем по всей России</span></li>
+                        <li class="courses-for-medical__item"><span class="list-item">Помогаем с аккредитацией<span class="mobile-delete"> до результата</span></span></li>
+                        <li class="courses-for-medical__item"><span class="list-item">Баллы НМО (более 1200 программ)</span></li>
+                    </ul>
+                    <button class="btn">Оставить заявку</button>
+                </div>
+                <div class="container container_photo">
+                    <picture class='courses-for-medical__pic doctor-man'>
+                        <source type='image/avif' srcset='./img/doctor-man.avif'>
+                        <source type='image/webp' srcset='./img/doctor-man.webp'>
+                        <img class='courses-for-medical__img' src='./img/doctor-man.png' alt='Врач'>
+                    </picture>
+                    <picture class='courses-for-medical__pic doctor-woman'>
+                        <source type='image/avif' srcset='./img/doctor-woman.avif'>
+                        <source type='image/webp' srcset='./img/doctor-woman.webp'>
+                        <img class='courses-for-medical__img' src='./img/doctor-woman.png' alt='Доктор'>
+                    </picture>
+                </div>
+            </section>
         </main>
         <footer class="foot">
 
         </footer>
     </div>
+    <script src="./js/open-btn.js"></script>
 </body>
 </html>
