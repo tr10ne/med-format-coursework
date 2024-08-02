@@ -144,3 +144,34 @@
     color: white;
   }
 }
+
+.exit-point {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 40px 0px;
+  border-radius: 50px;
+  background-color: $clrFrmInfgraf;
+  margin-top: 5px;
+}
+
+.exit-point__title {
+  font-family: "Manrope-Medium", sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 49px;
+}
+
+.exit-point__desc {
+  font-family: "Manrope-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: $clrTxt;
+}
+
+.btn_exit-point {
+  margin-top: 20px;
+}

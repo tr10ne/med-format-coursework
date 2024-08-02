@@ -1,0 +1,111 @@
+.why-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__body {
+    width: 100%;
+    margin-top: 14.5px;
+    padding-top: 40.5px;
+    border-top: 1px solid $clrLnBrdr;
+    display: grid;
+    grid-column-gap: 20px;
+    justify-items: center;
+    grid-template-columns: 1fr 441px 1fr;
+    grid-template-areas:
+      "A C D"
+      "B C E";
+  }
+  &__item {
+    display: flex;
+    justify-content: center;
+    &__pic {
+      width: 441px;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background-color: #f5f7fe;
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      overflow: hidden;
+    }
+    &__img {
+      width: 53%;
+    }
+    &__icon {
+      @extend %rwsSz;
+      border-color: $clrFrmInfgraf;
+      background-color: $clrFrmInfgraf;
+      margin-bottom: 5px;
+      display: flex;
+      justify-content: center;
+    }
+    &__title {
+      font-family: "Manrope-Medium", sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 25px;
+    }
+    &__desc {
+      font-family: "Manrope-Regular", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      color: $clrSpn;
+    }
+  }
+  &__item_1 {
+    grid-area: A;
+  }
+  &__item_2 {
+    grid-area: B;
+  }
+  &__item_3 {
+    grid-area: C;
+  }
+  &__item_4 {
+    grid-area: D;
+  }
+  &__item_5 {
+    grid-area: E;
+  }
+  &__item_5 .why-us__icon {
+    width: 17px;
+    aspect-ratio: 1;
+  }
+  &__block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+    &_1 {
+      padding: 0px 20px 0px 0px;
+    }
+    &_1 .why-us__item__title {
+      padding: 0px 35px;
+    }
+    &_2 {
+      padding: 5px 25px 0px 5px;
+    }
+    &_2 .why-us__item__desc {
+      padding: 0px 50px;
+    }
+    &_3 {
+      padding: 0px 38px 0px 14px;
+    }
+    &_3 .why-us__item__title {
+      padding: 0px 20px;
+    }
+    &_3 .why-us__item__desc {
+      padding: 0px 20px;
+    }
+    &_4 {
+      padding: 5px 25px 0px 5px;
+    }
+  }
+  &__icon {
+    width: 26px;
+    aspect-ratio: 1;
+  }
+}

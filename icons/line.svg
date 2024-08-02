@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+    <symbol viewBox="0 0 210 143" id="line-right">
+        <g>
+            <path d="M1 1C54.1667 6 170.3 41.3 209.5 142.5" stroke="#4269F4" stroke-dasharray="2 2" fill="none"/>
+        </g>
+    </symbol>
+    <symbol viewBox="0 0 227 133" id="line-left">
+        <g>
+            <path d="M0.5 132C23.1667 91 100 7.3 226 0.5" stroke="#4269F4" stroke-dasharray="2 2" fill="none"/>
+        </g>
+    </symbol>
+</svg>
