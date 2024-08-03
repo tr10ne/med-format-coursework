@@ -1,160 +1,160 @@
-@media (max-width:988px) {
-    .courses-for-medical {
-        gap: 170px 0px;
-    }
-    .doctor-man {
-        left: 470px;
-    }
-    .doctor-woman {
-        left: 290px;
-    };
+@media (max-width: 988px) {
+  .courses-for-medical {
+    gap: 170px 0px;
+  }
+  .doctor-man {
+    left: 470px;
+  }
+  .doctor-woman {
+    left: 290px;
+  }
 }
 
-@media (max-width:910px) {
-    .courses-for-medical {
-        gap: 300px 0px;
-    }
-    .doctor-man {
-        left: 40%;
-    }
-    .doctor-woman {
-        left: 20%;
-    };
+@media (max-width: 910px) {
+  .courses-for-medical {
+    gap: 300px 0px;
+  }
+  .doctor-man {
+    left: 40%;
+  }
+  .doctor-woman {
+    left: 20%;
+  }
 }
 
-@media (max-width:875px) {
-    .page {
-        padding: 20px;
-    }
+@media (max-width: 875px) {
+  .page {
+    padding: 20px;
+  }
 }
 
-@media (max-width:815px) {
-    .block {
-        gap: 0px 40px;
-    }
-    .nav {
-        padding: 10px 20px;
-    }
-    .menu {
-        gap: 19px;
-    }
+@media (max-width: 815px) {
+  .block {
+    gap: 0px 40px;
+  }
+  .nav {
+    padding: 10px 20px;
+  }
+  .menu {
+    gap: 19px;
+  }
 }
 
-@media (max-width:695px) {
-    .description {
-        display: none;
+@media (max-width: 695px) {
+  .description {
+    display: none;
+  }
+  .mail-link {
+    display: none;
+  }
+  .box:last-child {
+    gap: 20px;
+  }
+  .phone {
+    display: flex;
+    flex-direction: column;
+    translate: -100px 0px;
+    width: fit-content;
+    gap: 5px 0px;
+    background: rgba(249, 249, 249, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    &__item:last-child::before {
+      display: none;
     }
-    .mail-link {
-        display: none;
+  }
+  .phone-layout {
+    position: fixed;
+    transform: scale(0);
+    z-index: 1;
+  }
+  .phone-contact {
+    display: none;
+    position: relative;
+    white-space: nowrap;
+    &_mobile {
+      display: flex;
+      &:hover .social__icon_arrow {
+        transform: rotate(180deg);
+      }
+      &:hover .phone-layout {
+        transform: scale(1);
+      }
     }
-    .box:last-child {
-        gap: 20px;
+  }
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: rgba(249, 249, 249, 0.9);
+    padding: 0px 0px;
+    border-radius: 0px;
+    &.open-menu {
+      left: 0%;
     }
-    .phone {
-        display: flex;
-        flex-direction: column;
-        translate: -100px 0px;
-        width: fit-content;
-        gap: 5px 0px;
-        background: rgba(249, 249, 249, .7);
-        padding: 10px;
-        border-radius: 10px;
-        margin-top: 20px;
-        &__item:last-child::before {
-            display: none;
-        }
+    z-index: 1;
+  }
+  .menu {
+    flex-direction: column;
+  }
+  .burger {
+    display: block;
+    &__line.open-btn {
+      height: 0px;
     }
-    .phone-layout {
-        position: fixed;
-        transform: scale(0);
-        z-index: 1;
-    }
-    .phone-contact {
-        display: none;
-        position: relative;
-        white-space: nowrap;
-        &_mobile {
-            display: flex;
-            &:hover .social__icon_arrow {
-                transform: rotate(180deg);
-            }
-            &:hover .phone-layout {
-                transform: scale(1);
-            }
-        }
-    }
-    .nav {
-        position: fixed;
-        top: 0;
-        left: 100%;
-        width: 100%;
-        height: 100vh;
-        flex-direction: column;
-        justify-content: space-evenly;
-        background: rgba(249, 249, 249, .9);
-        padding: 0px 0px;
-        border-radius: 0px;
-        &.open-menu {
-            left: 0%;
-        }
-        z-index: 1;
-    }
-    .menu {
-        flex-direction: column;
-    }
-    .burger {
-        display: block;
-        &__line.open-btn {
-            height: 0px;
-        }
-    }
-    .open-btn::after {
-        top: 0%;
-        transform: rotate(45deg);
-    }
-    .open-btn::before {
-        top: 0%;
-        transform: rotate(-45deg);
-    }
-    .page.scroll-hidden {
-        position: fixed;
-    }
+  }
+  .open-btn::after {
+    top: 0%;
+    transform: rotate(45deg);
+  }
+  .open-btn::before {
+    top: 0%;
+    transform: rotate(-45deg);
+  }
+  .page.scroll-hidden {
+    position: fixed;
+  }
 }
 
 @media (max-width: 570px) {
-    .courses-for-medical {
-        margin-top: 20px;
-        padding: 0px;
-        background: none;
-        flex-direction: column;
-        gap: 10px;
-        &__item {
-            white-space: nowrap;
-        }
+  .courses-for-medical {
+    margin-top: 20px;
+    padding: 0px;
+    background: none;
+    flex-direction: column;
+    gap: 10px;
+    &__item {
+      white-space: nowrap;
     }
-    .container {
-        padding: 30px;
-        background-color: $clrFrmInfgraf;
-        border-radius: 30px;
-        margin: 0px;
-        min-width: 0px;
-        &_photo {
-            min-height: 280px;
-        }
+  }
+  .container {
+    padding: 30px;
+    background-color: $clrFrmInfgraf;
+    border-radius: 30px;
+    margin: 0px;
+    min-width: 0px;
+    &_photo {
+      min-height: 280px;
     }
-    .list-item {
-        margin-left: 2px;
-    }
-    .mobile-delete {
-        display: none;
-    }
-    .courses-for-medical__pic {
-        bottom: 0px;
-    }
-    .doctor-man {
-        left: 10px;
-    }
-    .doctor-woman {
-        left: 145px;
-    };
+  }
+  .list-item {
+    margin-left: 2px;
+  }
+  .mobile-delete {
+    display: none;
+  }
+  .courses-for-medical__pic {
+    bottom: 0px;
+  }
+  .doctor-man {
+    left: 10px;
+  }
+  .doctor-woman {
+    left: 145px;
+  }
 }

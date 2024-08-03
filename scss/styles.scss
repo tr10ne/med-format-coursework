@@ -1,19 +1,19 @@
-@import 'var';
-@import 'template';
-@import 'mixin';
-@import 'function';
-@import 'reset';
-@import 'fonts';
+@import "var";
+@import "template";
+@import "mixin";
+@import "function";
+@import "reset";
+@import "fonts";
 
 .page {
-    max-width: 1280px;
-    min-height: 100vh;
-    margin: 0 auto;
-    padding: 30px 50px;
-    position: relative;
+  max-width: 1280px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 30px 50px;
+  position: relative;
 }
 
-@import 'header';
-@import 'main';
+@import "header";
+@import "main";
 
-@import 'media';
+@import "media";

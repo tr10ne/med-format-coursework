@@ -1,0 +1,111 @@
+.study {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14.5px;
+  align-items: center;
+  &__tabs {
+    display: flex;
+    gap: 20px;
+    border-top: 1px solid $clrLnBrdr;
+  }
+  &__body {
+    margin-top: 5.5px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: $clrBckgrndTxt;
+    border-radius: 10px;
+    &__text {
+      font-family: "Manrope-Regular", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      color: $clrSpn;
+    }
+    &__search {
+      position: relative;
+      margin-top: -3px;
+    }
+    &__table {
+      margin: 0 -40px;
+      font-family: "Manrope-Regular", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22px;
+      color: $clrTxt;
+      border-spacing: 40px 0px;
+    }
+  }
+}
+
+.tab-item {
+  @include tab;
+  padding: 14px 20px;
+  margin-top: 40.5px;
+  &__name {
+    text-align: center;
+    font-family: "Manrope-Medium", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    cursor: default;
+  }
+  &:hover {
+    background-color: $clrAccnt;
+    color: white;
+  }
+}
+
+.search-study {
+  width: 100%;
+  line-height: 50px;
+  padding-left: 68px;
+  border-radius: 10px;
+  border: 1px solid rgb(66, 105, 244);
+  &::placeholder {
+    font-family: "Manrope-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    color: $clrSpn;
+  }
+}
+
+.search-study:focus {
+  outline: 2px solid rgb(66, 105, 244);
+}
+
+.search-icon {
+  border-right: 1px solid rgb(215, 215, 215);
+  position: absolute;
+  top: 2px;
+  width: 49px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.table-row:not(:last-child) .table-data {
+  border-bottom: 1px solid $clrLnBrdr;
+  padding-bottom: 9.5px;
+}
+
+.table-row:not(:first-child) .table-data {
+  padding-top: 11.5px;
+}
+
+.table-data {
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover .table-data__arrow {
+    margin-left: 5px;
+    transition: 0.3s;
+  }
+}

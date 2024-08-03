@@ -1,0 +1,65 @@
+.list-of-documents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  &__items {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+  }
+}
+
+.item-entity {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+  border-radius: 10px;
+  background-color: $clrFrmInfgraf;
+  flex: 1 1 0;
+  &__title {
+    font-family: "Manrope-Medium", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+  }
+  &__list {
+    list-style: inside;
+    font-family: "Manrope-Regular", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+  }
+}
+
+.list-point {
+  margin-bottom: 5px;
+  &::marker {
+    color: $clrAccnt;
+    font-size: 15px;
+  }
+}
+
+.point-item {
+  margin-left: -3px;
+}
+
+.download {
+  margin-top: -3px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Manrope-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  color: $clrAccnt;
+  &__icon {
+    width: 14px;
+    height: 18px;
+  }
+  &:hover {
+    color: $clrHvr;
+  }
+}

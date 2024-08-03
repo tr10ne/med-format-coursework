@@ -1,83 +1,83 @@
 .courses-for-medical {
-    background-color: $clrFrmInfgraf;
-    border-radius: 50px;
-    padding: 40px 50px;
-    margin-top: 40px;
-    display: flex;
-    flex-flow: row wrap;
-    &__title {
-        font-family: 'Manrope-Medium', sans-serif;
-        font-size: clamp(2rem, 1.707rem + 1.3vw, 2.75rem);
-        line-height: clamp(2.375rem, 2.13rem + 1.09vw, 3rem);
-        font-weight: 500;
-    }
-    &__desc {
-        font-family: 'Manrope-Regular', sans-serif;
-        font-size: clamp(1rem, 0.951rem + 0.22vw, 1.125rem);
-        line-height: clamp(1.375rem, 1.326rem + 0.22vw, 1.5rem);
-        font-weight: 400;
-    }
-    &__list {
-        list-style: inside;
-        list-style-image: url("data:image/svg+xml,%3Csvg width='16' height='15' viewBox='0 0 16 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 0C12.1423 0 15.5 3.35775 15.5 7.5C15.5 11.6423 12.1423 15 8 15C3.85775 15 0.5 11.6423 0.5 7.5C0.5 3.35775 3.85775 0 8 0ZM10.415 5.2275L7.0625 8.58L5.585 7.1025C5.47837 7.00314 5.33733 6.94905 5.19161 6.95162C5.04588 6.95419 4.90684 7.01322 4.80378 7.11628C4.70072 7.21934 4.64169 7.35838 4.63912 7.50411C4.63655 7.64983 4.69064 7.79087 4.79 7.8975L6.665 9.7725C6.77047 9.87784 6.91344 9.93701 7.0625 9.93701C7.21156 9.93701 7.35453 9.87784 7.46 9.7725L11.21 6.0225C11.2653 5.971 11.3096 5.9089 11.3403 5.8399C11.3711 5.7709 11.3876 5.69642 11.3889 5.62089C11.3903 5.54536 11.3764 5.47034 11.3481 5.4003C11.3198 5.33026 11.2777 5.26664 11.2243 5.21322C11.1709 5.15981 11.1072 5.1177 11.0372 5.08941C10.9672 5.06112 10.8921 5.04722 10.8166 5.04856C10.7411 5.04989 10.6666 5.06642 10.5976 5.09716C10.5286 5.12791 10.4665 5.17224 10.415 5.2275Z' fill='%23CFD4E5'/%3E%3C/svg%3E%0A");
-        font-family: 'Manrope-Regular', sans-serif;
-        font-size: clamp(0.875rem, 0.826rem + 0.22vw, 1rem);
-        line-height: clamp(1.188rem, 1.114rem + 0.33vw, 1.375rem);
-        font-weight: 400;
-        margin: 4px 0px 11px;
-    }
-    &__item:not(:last-child) {
-        margin-bottom: 7px;
-    }
-    &__pic {
-        width: clamp(12.875rem, 8.375rem + 20vw, 24.375rem);
-        position: absolute;
-        bottom: -40px;
-    }
-    &__img {
-        width: 100%;
-        height: 100%;
-    }
+  background-color: $clrFrmInfgraf;
+  border-radius: 50px;
+  padding: 40px 50px;
+  margin-top: 40px;
+  display: flex;
+  flex-flow: row wrap;
+  &__title {
+    font-family: "Manrope-Medium", sans-serif;
+    font-size: clamp(2rem, 1.707rem + 1.3vw, 2.75rem);
+    line-height: clamp(2.375rem, 2.13rem + 1.09vw, 3rem);
+    font-weight: 500;
+  }
+  &__desc {
+    font-family: "Manrope-Regular", sans-serif;
+    font-size: clamp(1rem, 0.951rem + 0.22vw, 1.125rem);
+    line-height: clamp(1.375rem, 1.326rem + 0.22vw, 1.5rem);
+    font-weight: 400;
+  }
+  &__list {
+    list-style: inside;
+    list-style-image: url("data:image/svg+xml,%3Csvg width='16' height='15' viewBox='0 0 16 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 0C12.1423 0 15.5 3.35775 15.5 7.5C15.5 11.6423 12.1423 15 8 15C3.85775 15 0.5 11.6423 0.5 7.5C0.5 3.35775 3.85775 0 8 0ZM10.415 5.2275L7.0625 8.58L5.585 7.1025C5.47837 7.00314 5.33733 6.94905 5.19161 6.95162C5.04588 6.95419 4.90684 7.01322 4.80378 7.11628C4.70072 7.21934 4.64169 7.35838 4.63912 7.50411C4.63655 7.64983 4.69064 7.79087 4.79 7.8975L6.665 9.7725C6.77047 9.87784 6.91344 9.93701 7.0625 9.93701C7.21156 9.93701 7.35453 9.87784 7.46 9.7725L11.21 6.0225C11.2653 5.971 11.3096 5.9089 11.3403 5.8399C11.3711 5.7709 11.3876 5.69642 11.3889 5.62089C11.3903 5.54536 11.3764 5.47034 11.3481 5.4003C11.3198 5.33026 11.2777 5.26664 11.2243 5.21322C11.1709 5.15981 11.1072 5.1177 11.0372 5.08941C10.9672 5.06112 10.8921 5.04722 10.8166 5.04856C10.7411 5.04989 10.6666 5.06642 10.5976 5.09716C10.5286 5.12791 10.4665 5.17224 10.415 5.2275Z' fill='%23CFD4E5'/%3E%3C/svg%3E%0A");
+    font-family: "Manrope-Regular", sans-serif;
+    font-size: clamp(0.875rem, 0.826rem + 0.22vw, 1rem);
+    line-height: clamp(1.188rem, 1.114rem + 0.33vw, 1.375rem);
+    font-weight: 400;
+    margin: 4px 0px 11px;
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 7px;
+  }
+  &__pic {
+    width: clamp(12.875rem, 8.375rem + 20vw, 24.375rem);
+    position: absolute;
+    bottom: -40px;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .doctor-man {
-    left: -40px;
+  left: -40px;
 }
 
 .doctor-woman {
-    width: clamp(9.875rem, 6.451rem + 15.22vw, 18.625rem);
-    left: 207px;
+  width: clamp(9.875rem, 6.451rem + 15.22vw, 18.625rem);
+  left: 207px;
 }
 
 .list-item {
-    margin-left: 9px;
+  margin-left: 9px;
 }
 
 .accent {
-    color: $clrAccnt;
+  color: $clrAccnt;
 }
 
 .container {
-    flex: 1 1 0;
-    position: relative;
-    min-width: 386px;
-    &_text {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 20px;
-    }
+  flex: 1 1 0;
+  position: relative;
+  min-width: 386px;
+  &_text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
 }
 
 .btn {
-    @include btn(188px);
-    font-family: 'Manrope-Medium', sans-serif;
-    font-size: rem(16);
-    line-height: 22px;
-    font-weight: 500;
-    color: #FFF;
-    cursor: pointer;
-    &:hover {
-        background-color: $clrHvr;
-    }
+  @include btn(188px);
+  font-family: "Manrope-Medium", sans-serif;
+  font-size: rem(16);
+  line-height: 22px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  &:hover {
+    background-color: $clrHvr;
+  }
 }
