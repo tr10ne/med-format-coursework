@@ -115,34 +115,32 @@
   margin-top: 5px;
 }
 
-.arrow-preview,
-.arrow-next {
-  position: absolute;
-  top: 343px;
+.control-arrow {
   @extend %rwsSz;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: $clrAccnt;
   font-size: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-weight: bold;
+  background-color: white;
   cursor: pointer;
+  &:hover {
+    @extend %rrwsSzHvr;
+    color: white;
+  }
 }
 
 .arrow-preview {
+  position: absolute;
+  top: 343px;
   left: 0px;
-  &:hover {
-    @extend %rrwsSzHvr;
-    color: white;
-  }
 }
 
 .arrow-next {
+  position: absolute;
+  top: 343px;
   right: 0px;
-  &:hover {
-    @extend %rrwsSzHvr;
-    color: white;
-  }
 }
 
 .exit-point {
@@ -162,6 +160,7 @@
   font-weight: 500;
   font-size: 36px;
   line-height: 49px;
+  margin-left: 10px;
 }
 
 .exit-point__desc {
