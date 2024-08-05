@@ -1779,6 +1779,11 @@ a:hover {
   background-color: #4269f4;
   color: white;
   border-radius: 10px 10px 0px 0px;
+  padding: 23px 30px 16px;
+}
+.block-answer-question:not(:first-child) .block-question:hover {
+  border: 1px solid rgb(219, 227, 255);
+  border-radius: 10px;
 }
 
 .block-question {
@@ -1788,11 +1793,14 @@ a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: "Manrope-Medium", sans-serif;
   font-size: 18px;
   font-weight: 500;
   line-height: 25px;
-  padding: 24px 30px 14px;
+  padding: 20px 30px 18px;
   cursor: default;
   border: 1px solid transparent;
 }
@@ -1803,6 +1811,9 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 30px;
   height: 30px;
 }
@@ -1813,10 +1824,6 @@ a:hover {
   width: 17.5px;
   height: 17.5px;
   fill: #343434;
-}
-.block-question:hover {
-  border: 1px solid rgb(219, 227, 255);
-  border-radius: 10px;
 }
 
 .block-answer {

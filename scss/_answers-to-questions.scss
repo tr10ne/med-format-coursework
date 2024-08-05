@@ -24,22 +24,29 @@
     background-color: $clrAccnt;
     color: white;
     border-radius: 10px 10px 0px 0px;
+    padding: 23px 30px 16px;
+  }
+  &:not(:first-child) .block-question:hover {
+    border: 1px solid rgb(219, 227, 255);
+    border-radius: 10px;
   }
 }
 
 .block-question {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-family: "Manrope-Medium", sans-serif;
   font-size: 18px;
   font-weight: 500;
   line-height: 25px;
-  padding: 24px 30px 14px;
+  padding: 20px 30px 18px;
   cursor: default;
   border: 1px solid transparent;
   &__symbol {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 30px;
     height: 30px;
     &:hover .block-question__svg {
@@ -50,10 +57,6 @@
     width: 17.5px;
     height: 17.5px;
     fill: #343434;
-  }
-  &:hover {
-    border: 1px solid rgb(219, 227, 255);
-    border-radius: 10px;
   }
 }
 
