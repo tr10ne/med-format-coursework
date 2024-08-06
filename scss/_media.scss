@@ -1,3 +1,66 @@
+@media (max-width: 1295px) {
+  .our-areas {
+    gap: 10px;
+  }
+  .offers {
+    padding: 0px 0px 20px;
+    justify-content: space-between;
+    border: none;
+    &__container {
+      justify-content: center;
+    }
+    margin-top: 10px;
+  }
+  .arrow-preview,
+  .arrow-next {
+    position: relative;
+    inset: 0px 0px;
+  }
+  .offers-controls {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1170px) {
+  .desc-section {
+    padding: 0px 275px;
+  }
+  .why-us__body {
+    row-gap: 20px;
+    padding: 0px 0px;
+    border: none;
+  }
+  .why-us__item_2 {
+    order: -1;
+  }
+  .why-us__item__pic {
+    background-color: white;
+  }
+  .why-us__block_1,
+  .why-us__block_2,
+  .why-us__block_3,
+  .why-us__block_4 {
+    position: static;
+  }
+  .why-us__item__desc {
+    z-index: 1;
+  }
+}
+
+@media (max-width: 1095px) {
+  .offers__item::before {
+    top: 100.5px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .desc-section {
+    padding: 0px 220px;
+  }
+}
+
 @media (max-width: 988px) {
   .courses-for-medical {
     gap: 170px 0px;
@@ -7,6 +70,12 @@
   }
   .doctor-woman {
     left: 290px;
+  }
+}
+
+@media (max-width: 930px) {
+  .desc-section {
+    padding: 0px 160px;
   }
 }
 
@@ -37,6 +106,34 @@
   }
   .menu {
     gap: 19px;
+  }
+}
+
+@media (max-width: 740px) {
+  .desc-section {
+    padding: 0px 110px;
+  }
+}
+
+@media (max-width: 716px) {
+  .why-us__item__pic {
+    position: static;
+  }
+  .why-us__item_2 {
+    display: flex;
+    justify-content: center;
+  }
+  .why-us__item__pic {
+    background-color: $clrFrmInfgraf;
+  }
+}
+
+@media (max-width: 702px) {
+  .offers__container {
+    display: flex;
+  }
+  .offers__body:not(:first-child) {
+    display: none;
   }
 }
 
@@ -119,9 +216,12 @@
   .page.scroll-hidden {
     position: fixed;
   }
+  .desc-section {
+    padding: 0px 80px;
+  }
 }
 
-@media (max-width: 570px) {
+@media (max-width: 572px) {
   .courses-for-medical {
     margin-top: 20px;
     padding: 0px;
@@ -133,7 +233,7 @@
     }
   }
   .container {
-    padding: 30px;
+    padding: 30px 13px 30px 30px;
     background-color: $clrFrmInfgraf;
     border-radius: 30px;
     margin: 0px;
@@ -151,10 +251,27 @@
   .courses-for-medical__pic {
     bottom: 0px;
   }
+  .desc-section {
+    padding: 0px 0px;
+  }
+  .exit-point {
+    padding: 30px 35px;
+  }
+}
+
+@media (max-width: 430px) {
   .doctor-man {
-    left: 10px;
+    left: 5px;
   }
   .doctor-woman {
-    left: 145px;
+    left: 140px;
+  }
+  .offers__head {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .offers__name {
+    width: 100%;
+    min-width: 313px;
   }
 }
