@@ -219,6 +219,13 @@
   }
 }
 
+@media (max-width: 988px) {
+  .doctor-man,
+  .doctor-woman {
+    display: none;
+  }
+}
+
 @media (max-width: 930px) {
   .desc-section {
     padding: 0px 160px;
@@ -248,9 +255,11 @@
     gap: 300px 0px;
   }
   .doctor-man {
+    display: block;
     left: 40%;
   }
   .doctor-woman {
+    display: block;
     left: 20%;
   }
 }
@@ -402,7 +411,7 @@
     transform: rotate(-45deg);
   }
   .page.scroll-hidden {
-    position: fixed;
+    overflow-y: hidden;
   }
   .desc-section {
     padding: 0px 80px;
@@ -505,18 +514,28 @@
   .table-row .table-data:nth-child(4) {
     display: none;
   }
+  .answers-to-questions__title {
+    width: 100%;
+  }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 520px) {
   .about__info {
     min-width: 100%;
     padding: 20px;
   }
+}
+
+@media (max-width: 508px) {
   .about__pic {
     display: flex;
     order: 0;
   }
+}
+
+@media (max-width: 500px) {
   .license__foto {
+    min-width: 0;
     flex-direction: column;
     gap: 10px;
   }

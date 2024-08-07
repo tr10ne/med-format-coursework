@@ -20,6 +20,7 @@
     gap: 32px;
     background-color: $clrBckgrndTxt;
     border-radius: 10px;
+    overflow: hidden;
     &__text {
       font-family: "Manrope-Regular", sans-serif;
       font-size: clamp(0.875rem, 0.826rem + 0.217vw, 1rem);
