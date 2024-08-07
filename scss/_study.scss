@@ -1,27 +1,30 @@
 .study {
+  width: 100%;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
   gap: 14.5px;
   align-items: center;
   &__tabs {
+    width: 100%;
     display: flex;
     gap: 20px;
     border-top: 1px solid $clrLnBrdr;
+    padding-top: 40.5px;
   }
   &__body {
     margin-top: 5.5px;
     padding: 40px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 32px;
     background-color: $clrBckgrndTxt;
     border-radius: 10px;
     &__text {
       font-family: "Manrope-Regular", sans-serif;
-      font-size: 16px;
+      font-size: clamp(0.875rem, 0.826rem + 0.217vw, 1rem);
       font-weight: 400;
-      line-height: 22px;
+      line-height: clamp(1.188rem, 1.114rem + 0.326vw, 1.375rem);
       color: $clrSpn;
     }
     &__search {
@@ -31,11 +34,11 @@
     &__table {
       margin: 0 -40px;
       font-family: "Manrope-Regular", sans-serif;
-      font-size: 14px;
+      font-size: clamp(0.75rem, 0.701rem + 0.217vw, 0.875rem);
       font-weight: 400;
-      line-height: 22px;
+      line-height: clamp(1rem, 0.927rem + 0.326vw, 1.188rem);
       color: $clrTxt;
-      border-spacing: 40px 0px;
+      border-spacing: 40px 2px;
     }
   }
 }
@@ -43,15 +46,16 @@
 .tab-item {
   @include tab;
   padding: 14px 20px;
-  margin-top: 40.5px;
-  &__name {
-    text-align: center;
-    font-family: "Manrope-Medium", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 22px;
-    cursor: default;
-  }
+  flex-shrink: 1;
+  text-align: center;
+  font-family: "Manrope-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  cursor: default;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   &:hover {
     background-color: $clrAccnt;
     color: white;

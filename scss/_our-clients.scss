@@ -6,9 +6,9 @@
   &__title {
     justify-self: flex-start;
     font-family: "Manrope-Medium", sans-serif;
-    font-size: 36px;
+    font-size: clamp(1.5rem, 1.207rem + 1.304vw, 2.25rem);
     font-weight: 500;
-    line-height: 49px;
+    line-height: clamp(2.063rem, 1.671rem + 1.739vw, 3.063rem);
   }
   &__body {
     display: flex;

@@ -1,12 +1,13 @@
 .about {
   font-family: "Manrope-Regular", sans-serif;
-  font-size: 16px;
+  font-size: clamp(0.875rem, 0.826rem + 0.217vw, 1rem);
   font-weight: 400;
-  line-height: 22px;
+  line-height: clamp(1.188rem, 1.114rem + 0.326vw, 1.375rem);
   display: flex;
   gap: 20px;
   margin-top: -3px;
   &__content {
+    max-width: 680px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -17,26 +18,33 @@
   }
   &__title {
     font-family: "Manrope-Medium", sans-serif;
-    font-size: 36px;
+    font-size: clamp(1.5rem, 1.207rem + 1.304vw, 2.25rem);
     font-weight: 500;
-    line-height: 49px;
+    line-height: clamp(2.063rem, 1.671rem + 1.739vw, 3.063rem);
   }
   &__text {
     color: $clrSpn;
   }
   &__info {
+    min-width: 480px;
     display: grid;
-    grid-template-columns: 190px 200px;
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(
+        clamp(6.563rem, 4.484rem + 9.239vw, 11.875rem),
+        clamp(7.813rem, 5.978rem + 8.152vw, 12.5rem)
+      )
+    );
     row-gap: 34px;
-    column-gap: 10px;
+    // column-gap: 10px;
     border-radius: 30px;
     background-color: $clrFrmInfgraf;
     padding: 40px;
   }
   &__pic__item {
     display: block;
-    width: 200px;
-    height: 106px;
+    width: clamp(6.563rem, 4.239rem + 10.326vw, 12.5rem);
+    height: clamp(4.75rem, 4.016rem + 3.261vw, 6.625rem);
     border-radius: 30px;
   }
   &__pic__img {
@@ -50,9 +58,9 @@
   }
   &__num__digit {
     font-family: "Manrope-Bold", sans-serif;
-    font-size: 36px;
+    font-size: clamp(1.5rem, 1.207rem + 1.304vw, 2.25rem);
     font-weight: 700;
-    line-height: 49px;
+    line-height: clamp(2.063rem, 1.671rem + 1.739vw, 3.063rem);
     color: $clrAccnt;
   }
   &__num_right {

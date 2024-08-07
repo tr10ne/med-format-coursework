@@ -17,8 +17,9 @@
   &__type {
     display: flex;
     flex-direction: column;
-    width: 380px;
-    height: 253px;
+    min-width: 320px;
+    max-width: 380px;
+    flex: 1 1 0;
     background-color: $clrBckgrndTxt;
     padding: 31px 30px 30px;
     border-radius: 10px;

@@ -12,10 +12,11 @@
   }
   &__foto {
     border-radius: 50px;
+    position: relative;
     &__pic {
       display: block;
-      width: 380px;
-      height: 377px;
+      width: clamp(20rem, 18.533rem + 6.522vw, 23.75rem);
+      height: clamp(14.313rem, 10.693rem + 16.087vw, 23.563rem);
     }
     &__img {
       width: 100%;
@@ -24,15 +25,15 @@
   }
   &__title {
     font-family: "Manrope-Medium", sans-serif;
-    font-size: 36px;
+    font-size: clamp(1.5rem, 1.207rem + 1.304vw, 2.25rem);
     font-weight: 500;
-    line-height: 49px;
+    line-height: clamp(2.063rem, 1.671rem + 1.739vw, 3.063rem);
   }
   &__desc {
     font-family: "Manrope-Regular", sans-serif;
-    font-size: 16px;
+    font-size: clamp(0.875rem, 0.826rem + 0.217vw, 1rem);
     font-weight: 400;
-    line-height: 22px;
+    line-height: clamp(1.188rem, 1.114rem + 0.326vw, 1.375rem);
     color: $clrSpn;
   }
 }
