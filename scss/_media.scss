@@ -411,7 +411,8 @@
     transform: rotate(-45deg);
   }
   .page.scroll-hidden {
-    overflow-y: hidden;
+    width: 100%;
+    position: fixed;
   }
   .desc-section {
     padding: 0px 80px;
